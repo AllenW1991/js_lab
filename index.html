@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            position: relative;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        nav {
+            margin-top: 20px;
+            border-radius: 20px;
+            color: #fff;
+            line-height: 30px;
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            width: 100%;
+            background-color: #aaa;
+            position: relative;
+        }
+
+        nav img {
+            top: -8px;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            position: absolute;
+            margin-left: 48px;
+            border-radius: 50%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        .container {
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .photoes {
+            margin: auto;
+            margin-top: 64px;
+            text-align: center;
+        }
+
+
+
+        .photoes ul {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .photoes li {
+            margin: 30px 30px;
+            box-sizing: border-box;
+        }
+
+        .cover {
+            width: 100%;
+            height: 800px;
+            position: fixed;
+            background-color: rgba(0, 0, 0, .5);
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ad {
+            position: absolute;
+            background-color: #fff;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            padding: 24px;
+        }
+
+        .ad .close {
+            position: absolute;
+            top: -8px;
+            right: -10px;
+            width: 20px;
+            height: 20px;
+            background-color: #aaa;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href=""><img src="https://picsum.photos/300/300
+            " alt=""></a>
+
+        <ul>
+            <li><a href="">首頁</a> </li>
+            <li><a href="">介紹</a> </li>
+            <li><a href="">會員中心</a> </li>
+            <li><a href="">登入</a> </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img src="https://picsum.photos/300/300;
+        " alt="">
+        <div class="list">
+            <ul>
+                <li>
+                    <h2>title </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quidem ut consequuntur ab omnis.
+                        Hic nostrum excepturi veniam repudiandae itaque?</p>
+                </li>
+                <li>
+                    <h2>title </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quidem ut consequuntur ab omnis.
+                        Hic nostrum excepturi veniam repudiandae itaque?</p>
+                </li>
+                <li>
+                    <h2>title </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quidem ut consequuntur ab omnis.
+                        Hic nostrum excepturi veniam repudiandae itaque?</p>
+                </li>
+                <li>
+                    <h2>title </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quidem ut consequuntur ab omnis.
+                        Hic nostrum excepturi veniam repudiandae itaque?</p>
+                </li>
+            </ul>
+        </div>
+        <div class="photoes">
+            <h2>Library</h2>
+            <ul>
+                <li><img src="https://picsum.photos/300/300?random=1" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=2" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=3" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=4" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=5" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=6" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=7" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=8" alt=""></li>
+                <li><img src="https://picsum.photos/300/300?random=9" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cover">
+        <div class="ad">
+            <div class="close">X</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis temporibus praesentium magnam
+            tempora repudiandae quasi eos, optio voluptas, delectus quod cumque aut error asperiores beatae! Impedit,
+            fugit inventore nihil fuga ducimus debitis temporibus, aut enim architecto quia sunt in, quasi vitae? Quidem
+            provident doloribus quod pariatur sit, deserunt expedita optio?
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.close').click(function () {
+                {
+                    $('.cover').toggle();
+                }
+            })
+        })
+
+    </script>
+</body>
+
+</html>
